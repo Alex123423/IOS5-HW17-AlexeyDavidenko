@@ -15,9 +15,9 @@ struct PlaylistView: View {
         NavigationView {
             VStack {
                 if isShowFilter {
-                    
+                   MediaListCell()
                 } else {
-                    
+                    MediaListCell()
                 }
             }
             .navigationTitle("Media library")

@@ -9,9 +9,9 @@ import SwiftUI
 
 struct MiniPlayerView: View {
     var body: some View {
-        VStack() {
+        VStack(alignment: .center) {
             
-            HStack {
+            HStack(alignment: .center) {
                 
                 Image("musicImage")
                     .frame(width: 70, height: 70, alignment: .leading)
@@ -43,11 +43,12 @@ struct MiniPlayerView: View {
                         .foregroundColor(.black)
                 }
             }
-            
-            Divider()
-            
         }
         .padding([.trailing, .leading], 20)
+        .padding([.top, .bottom], 10)
+        .background(.bar)
+        
+        Divider()
     }
 }
 

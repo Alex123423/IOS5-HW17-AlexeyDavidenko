@@ -13,17 +13,17 @@ struct LibraryView: View {
             
             VStack {
                 MediaInfoView()
-
+                
             }
             .navigationTitle("Media library")
             .navigationBarItems(
                 trailing:
-                    NavigationLink(destination: MediaInfoView(),
+                    NavigationLink(destination: MediaListCell(),
                                    label: {
                                        Text("Edit")
                                            .foregroundColor(.red)
                                    })
-                                )
+            )
         }
     }
 }
