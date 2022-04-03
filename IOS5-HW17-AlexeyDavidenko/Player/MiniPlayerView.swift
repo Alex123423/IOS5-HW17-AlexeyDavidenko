@@ -9,10 +9,12 @@ import SwiftUI
 
 struct MiniPlayerView: View {
     var body: some View {
-        VStack() {
+        VStack(alignment: .center) {
             
-            HStack {
-                
+            HStack(alignment: .center) {
+                Button(action: {
+                    print("music button tapped")
+                }) {
                 Image("musicImage")
                     .frame(width: 70, height: 70, alignment: .leading)
                     .cornerRadius(5)
@@ -25,7 +27,7 @@ struct MiniPlayerView: View {
                     .font(.system(size: 20))
                     .padding([.leading], 10)
                 
-                
+                }
                 Spacer()
                 
                 Button(action: {
@@ -43,11 +45,12 @@ struct MiniPlayerView: View {
                         .foregroundColor(.black)
                 }
             }
-            
-            Divider()
-            
         }
         .padding([.trailing, .leading], 20)
+        .padding([.top, .bottom], 10)
+        .background(.bar)
+        
+        Divider()
     }
 }
 

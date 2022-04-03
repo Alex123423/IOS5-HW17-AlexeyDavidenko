@@ -1,5 +1,5 @@
 //
-//  PlaylistView.swift
+//  LibraryView.swift
 //  IOS5-HW17-AlexeyDavidenko
 //
 //  Created by Alexey Davidenko on 23.03.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PlaylistView: View {
+struct LibraryView: View {
     
     @State private var isShowFilter = false
     
@@ -15,13 +15,13 @@ struct PlaylistView: View {
         NavigationView {
             VStack {
                 if isShowFilter {
-                    
+                    MediaListCell()
                 } else {
-                    
+                    MediaInfoView()
                 }
             }
             .navigationTitle("Media library")
-            .navigationBarItems(trailing: Button(action: {
+            .navigationBarItems(trailing: Button(action : {
                 isShowFilter.toggle()
             }, label: {
                 if isShowFilter {
@@ -34,8 +34,8 @@ struct PlaylistView: View {
     }
 }
 
-struct PlaylistView_Previews: PreviewProvider {
+struct LibraryView_Previews: PreviewProvider {
     static var previews: some View {
-        PlaylistView()
+        LibraryView()
     }
 }

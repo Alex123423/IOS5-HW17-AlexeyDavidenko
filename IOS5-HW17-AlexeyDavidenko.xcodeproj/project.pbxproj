@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1764549F27F74F03003B817D /* MediaListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1764549E27F74F03003B817D /* MediaListModel.swift */; };
 		176FA54B27E493B600C69B92 /* IOS5_HW17_AlexeyDavidenkoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176FA54A27E493B600C69B92 /* IOS5_HW17_AlexeyDavidenkoApp.swift */; };
 		176FA54D27E493B600C69B92 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176FA54C27E493B600C69B92 /* StartView.swift */; };
 		176FA54F27E493C200C69B92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176FA54E27E493C200C69B92 /* Assets.xcassets */; };
@@ -14,10 +15,11 @@
 		1795B64127EBB37D00FC8D12 /* MediaInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795B64027EBB37D00FC8D12 /* MediaInfoView.swift */; };
 		1795B64327EBB38C00FC8D12 /* MiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795B64227EBB38C00FC8D12 /* MiniPlayerView.swift */; };
 		1795B64B27EBB7D100FC8D12 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795B64A27EBB7D100FC8D12 /* LibraryView.swift */; };
-		1795B64D27EBB93800FC8D12 /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795B64C27EBB93800FC8D12 /* PlaylistView.swift */; };
+		1795B65127F087D700FC8D12 /* MediaListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795B65027F087D700FC8D12 /* MediaListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1764549E27F74F03003B817D /* MediaListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListModel.swift; sourceTree = "<group>"; };
 		176FA54727E493B600C69B92 /* IOS5-HW17-AlexeyDavidenko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS5-HW17-AlexeyDavidenko.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		176FA54A27E493B600C69B92 /* IOS5_HW17_AlexeyDavidenkoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS5_HW17_AlexeyDavidenkoApp.swift; sourceTree = "<group>"; };
 		176FA54C27E493B600C69B92 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -26,7 +28,7 @@
 		1795B64027EBB37D00FC8D12 /* MediaInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaInfoView.swift; sourceTree = "<group>"; };
 		1795B64227EBB38C00FC8D12 /* MiniPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerView.swift; sourceTree = "<group>"; };
 		1795B64A27EBB7D100FC8D12 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
-		1795B64C27EBB93800FC8D12 /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
+		1795B65027F087D700FC8D12 /* MediaListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		176454A027F7504B003B817D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1795B64A27EBB7D100FC8D12 /* LibraryView.swift */,
+				1795B64027EBB37D00FC8D12 /* MediaInfoView.swift */,
+				1795B65027F087D700FC8D12 /* MediaListCell.swift */,
+				176454A127F75075003B817D /* Model */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		176454A127F75075003B817D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1764549E27F74F03003B817D /* MediaListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		176FA53E27E493B600C69B92 = {
 			isa = PBXGroup;
 			children = (
@@ -59,16 +80,12 @@
 		176FA54927E493B600C69B92 /* IOS5-HW17-AlexeyDavidenko */ = {
 			isa = PBXGroup;
 			children = (
+				176FA54A27E493B600C69B92 /* IOS5_HW17_AlexeyDavidenkoApp.swift */,
+				176FA54C27E493B600C69B92 /* StartView.swift */,
 				1795B64927EBB41A00FC8D12 /* Search */,
 				1795B64827EBB40700FC8D12 /* Library */,
 				1795B64727EBB3F900FC8D12 /* Player */,
 				1795B64627EBB3F200FC8D12 /* Radio */,
-				176FA54A27E493B600C69B92 /* IOS5_HW17_AlexeyDavidenkoApp.swift */,
-				176FA54C27E493B600C69B92 /* StartView.swift */,
-				1795B64027EBB37D00FC8D12 /* MediaInfoView.swift */,
-				1795B64227EBB38C00FC8D12 /* MiniPlayerView.swift */,
-				1795B64A27EBB7D100FC8D12 /* LibraryView.swift */,
-				1795B64C27EBB93800FC8D12 /* PlaylistView.swift */,
 				176FA54E27E493C200C69B92 /* Assets.xcassets */,
 				176FA55027E493C200C69B92 /* Preview Content */,
 			);
@@ -93,6 +110,7 @@
 		1795B64727EBB3F900FC8D12 /* Player */ = {
 			isa = PBXGroup;
 			children = (
+				1795B64227EBB38C00FC8D12 /* MiniPlayerView.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -100,6 +118,7 @@
 		1795B64827EBB40700FC8D12 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				176454A027F7504B003B817D /* View */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -181,12 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1795B64D27EBB93800FC8D12 /* PlaylistView.swift in Sources */,
 				1795B64327EBB38C00FC8D12 /* MiniPlayerView.swift in Sources */,
+				1795B65127F087D700FC8D12 /* MediaListCell.swift in Sources */,
 				176FA54D27E493B600C69B92 /* StartView.swift in Sources */,
 				176FA54B27E493B600C69B92 /* IOS5_HW17_AlexeyDavidenkoApp.swift in Sources */,
 				1795B64B27EBB7D100FC8D12 /* LibraryView.swift in Sources */,
 				1795B64127EBB37D00FC8D12 /* MediaInfoView.swift in Sources */,
+				1764549F27F74F03003B817D /* MediaListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
