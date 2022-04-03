@@ -8,22 +8,28 @@
 import SwiftUI
 
 struct LibraryView: View {
+    
+    @State private var isShowFilter = false
+    
     var body: some View {
         NavigationView {
-            
             VStack {
-                MediaInfoView()
-                
+                if isShowFilter {
+                    MediaListCell()
+                } else {
+                    MediaInfoView()
+                }
             }
             .navigationTitle("Media library")
-            .navigationBarItems(
-                trailing:
-                    NavigationLink(destination: MediaListCell(),
-                                   label: {
-                                       Text("Edit")
-                                           .foregroundColor(.red)
-                                   })
-            )
+            .navigationBarItems(trailing: Button(action : {
+                isShowFilter.toggle()
+            }, label: {
+                if isShowFilter {
+                    Text("Done").foregroundColor(.red)
+                } else {
+                    Text("Edit").foregroundColor(.red)
+                }
+            }))
         }
     }
 }
