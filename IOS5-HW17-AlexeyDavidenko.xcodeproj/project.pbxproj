@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1733BA7F2847A7820019B1E2 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1733BA7E2847A7810019B1E2 /* RadioView.swift */; };
+		1733BA822848CD300019B1E2 /* RadioStationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1733BA812848CD300019B1E2 /* RadioStationsModel.swift */; };
+		1733BA842848D38F0019B1E2 /* miniStationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1733BA832848D38F0019B1E2 /* miniStationsModel.swift */; };
 		175EFBD728479A4700FF7D5E /* MainRadioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EFBD628479A4700FF7D5E /* MainRadioCell.swift */; };
 		175EFBD928479AA000FF7D5E /* SecondaryRadioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EFBD828479AA000FF7D5E /* SecondaryRadioCell.swift */; };
 		1764549F27F74F03003B817D /* MediaListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1764549E27F74F03003B817D /* MediaListModel.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1733BA7E2847A7810019B1E2 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		1733BA812848CD300019B1E2 /* RadioStationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationsModel.swift; sourceTree = "<group>"; };
+		1733BA832848D38F0019B1E2 /* miniStationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniStationsModel.swift; sourceTree = "<group>"; };
 		175EFBD628479A4700FF7D5E /* MainRadioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRadioCell.swift; sourceTree = "<group>"; };
 		175EFBD828479AA000FF7D5E /* SecondaryRadioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryRadioCell.swift; sourceTree = "<group>"; };
 		1764549E27F74F03003B817D /* MediaListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaListModel.swift; sourceTree = "<group>"; };
@@ -46,13 +52,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1733BA7D2847A7600019B1E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				175EFBD628479A4700FF7D5E /* MainRadioCell.swift */,
+				175EFBD828479AA000FF7D5E /* SecondaryRadioCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1733BA802848CCE40019B1E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1733BA812848CD300019B1E2 /* RadioStationsModel.swift */,
+				1733BA832848D38F0019B1E2 /* miniStationsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		176454A027F7504B003B817D /* View */ = {
 			isa = PBXGroup;
 			children = (
 				1795B64A27EBB7D100FC8D12 /* LibraryView.swift */,
 				1795B64027EBB37D00FC8D12 /* MediaInfoView.swift */,
 				1795B65027F087D700FC8D12 /* MediaListCell.swift */,
-				176454A127F75075003B817D /* Model */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,8 +130,9 @@
 		1795B64627EBB3F200FC8D12 /* Radio */ = {
 			isa = PBXGroup;
 			children = (
-				175EFBD628479A4700FF7D5E /* MainRadioCell.swift */,
-				175EFBD828479AA000FF7D5E /* SecondaryRadioCell.swift */,
+				1733BA7E2847A7810019B1E2 /* RadioView.swift */,
+				1733BA7D2847A7600019B1E2 /* View */,
+				1733BA802848CCE40019B1E2 /* Model */,
 			);
 			path = Radio;
 			sourceTree = "<group>";
@@ -125,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				176454A027F7504B003B817D /* View */,
+				176454A127F75075003B817D /* Model */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -207,9 +232,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1795B64327EBB38C00FC8D12 /* MiniPlayerView.swift in Sources */,
+				1733BA842848D38F0019B1E2 /* miniStationsModel.swift in Sources */,
 				1795B65127F087D700FC8D12 /* MediaListCell.swift in Sources */,
+				1733BA822848CD300019B1E2 /* RadioStationsModel.swift in Sources */,
 				175EFBD728479A4700FF7D5E /* MainRadioCell.swift in Sources */,
 				176FA54D27E493B600C69B92 /* StartView.swift in Sources */,
+				1733BA7F2847A7820019B1E2 /* RadioView.swift in Sources */,
 				176FA54B27E493B600C69B92 /* IOS5_HW17_AlexeyDavidenkoApp.swift in Sources */,
 				1795B64B27EBB7D100FC8D12 /* LibraryView.swift in Sources */,
 				175EFBD928479AA000FF7D5E /* SecondaryRadioCell.swift in Sources */,

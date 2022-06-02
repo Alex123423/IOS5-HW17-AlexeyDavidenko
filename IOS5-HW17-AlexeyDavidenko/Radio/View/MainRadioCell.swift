@@ -20,10 +20,12 @@ struct MainRadioCell: View {
                 .foregroundColor(.black)
                 .font(.system(size: 20))
             
-            Image("radioImage1")
+            Image("bigRadioImage1")
                 .resizable()
-                .scaledToFit()
-                .cornerRadius(10)
+                .aspectRatio(1.5, contentMode: .fit)
+                //.scaledToFit()
+                .frame(height: 200)
+                .cornerRadius(8)
                 .padding([.top], 20)
         }
         .padding([.all], 20)

@@ -12,10 +12,12 @@ struct SecondaryRadioCell: View {
         
         HStack(alignment: .center) {
             
-            Image("radioImage2")
-                //.resizable()
+            Image("radioImage1")
+                .resizable()
+                //.frame(minWidth: 10, idealWidth: 50, maxWidth: 100, minHeight: 10, idealHeight: 50, maxHeight: 100, alignment: .center)
+                .frame(maxWidth: 75, maxHeight: 75, alignment: .center)
                 .scaledToFit()
-                .cornerRadius(10)
+                .cornerRadius(8)
                 .padding([.all], 10)
             
             VStack(alignment: .leading) {
@@ -25,6 +27,8 @@ struct SecondaryRadioCell: View {
                 Text("what are listening to right now.")
                     .foregroundColor(.gray)
                     .font(.system(size: 16))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0)
                 
             }
         }
